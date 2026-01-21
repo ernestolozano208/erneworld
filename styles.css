@@ -28,5 +28,39 @@ body {
   img:hover {
       transform: scale(1.05); /* Slightly enlarge image on hover */
   }
-  a {
-    text-decoration:none;
+      a {
+    display: inline-block; /* Essential for transform properties to work well */
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    border: 1px solid #000;
+    transition: transform 0.3s ease; /* Smooth transition when animation stops */
+}
+
+/* Apply the animation on hover */
+a:hover {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; /* Apply the shake animation */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Defines the shake animation keyframes */
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0); /* Move left 1px */
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0); /* Move right 2px */
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0); /* Move left 4px */
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0); /* Move right 4px */
+    }
+    100% {
+        transform: translate3d(0, 0, 0); /* Back to original position */
+    }
+}
