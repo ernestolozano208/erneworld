@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erne World Website</title>
+     <link rel="stylesheet" href="styles.css">
+     <style> .no_underline { 
+     text-decoration: none;
+     color: #FFFF00;
+     }
+     </style>
+</head>
+<body>
+  <h1 class="title">Erne World</h1>
+  
+
+  <div style="text-align: center;">
+  <audio id="track" src="https://attachments.are.na/42726228/2bac5919e06bab63e74a8babacf1734e.mp3?1768616330"></audio>
+
+<!-- The image that acts as the button -->
+<img id="toggleImg" src="https://d2w9rnfcy7mm78.cloudfront.net/28804698/original_a86a8e8486fd94baf68e963f3ee78534.jpg?1718603975?bc=0" alt="Click to play audio" onclick="playAudio()" width="250" height="250" style="cursor: pointer;">
+</div>
+  <script>
+  const audio = document.getElementById('track');
+  const img = document.getElementById('toggleImg');
+
+  img.onclick = function() {
+    if (audio.paused) {
+      audio.play(); // Starts the audio
+    } else {
+      audio.pause();       // Stops the audio
+      audio.currentTime = 0; // Resets it to the beginning
+    }
+  };
+</script>
+<div style = "display: block; 
+    width: fit-content; 
+    margin-left: auto;
+    margin-right: auto;
+    font-family:papyrus;
+    font-size: 50px;
+    margin-top:50px;"
+  >
+<a class="no_underline" href="https://erneworld.neocities.org/blog" target="_blank">blog</a>
+</div>
+<div style ="display: block; 
+    width: fit-content; 
+    margin-left: auto;
+    margin-right: auto;
+    font-family:papyrus;
+    font-size: 50px;
+    margin-top:50px;">
+    <a class="no_underline" href="https://www.are.na/erne-lasagna/channels" target="_blank">arena</a>
+    </div>
+
+</body>
+</html>
