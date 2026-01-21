@@ -28,13 +28,12 @@ body {
   img:hover {
       transform: scale(1.05); /* Slightly enlarge image on hover */
   }
-      a {
+       a {
     display: inline-block; /* Essential for transform properties to work well */
     padding: 10px 15px;
     text-decoration: none;
     color: #000;
-    font-size: 20px;
-    border: 1px solid #000;
+    font-size: 60px;
     transition: transform 0.3s ease; /* Smooth transition when animation stops */
 }
 
