@@ -1,0 +1,11 @@
+body {
+    background-color: white;
+  }
+  .blogpost, p {
+    font-family: papyrus ;
+  
+  }
+  .blogpost, img {
+    max-width: 100%;
+    height: auto;
+  }
