@@ -1,11 +1,19 @@
 body {
     background-color: white;
   }
+.blogpost {
+    font-family: papyrus;
+    max-width: 700px;  /* Keeps content readable */
+    margin: 0 auto;    /* Centers the content */
+    padding: 20px;     /* Breathing room on mobile */
   .blogpost, p {
-    font-family: papyrus ;
+    line-height: 1.6;  /* Makes text easier to read */
+    margin-bottom: 1em;
   
   }
   .blogpost, img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 20px auto;
   }
